@@ -1,0 +1,82 @@
+   body{
+    background-color: rgb(117, 140, 160);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+
+
+   .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .header-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .instructions {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.6;
+        }
+        .main-container {
+            background-color: #f7f7f7;
+            padding: 40px;
+            border-radius: 8px;
+        }
+        .footer-button {
+            background-color: #007bff;
+            color: white;
+            width: 100%;
+        }
+
+
+
+        .footer {
+    background-color: #0056b3;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 0;
+}
+
+#countdown{
+    color: green;
+}
+#cards{
+    display: none;
+}
+
+
+
+.content-wrapper {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.loader-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: none;
+}
+
+.loaded .content-wrapper {
+    opacity: 1; 
+}
