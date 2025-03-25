@@ -1,5 +1,6 @@
    body{
-    background-color: rgb(117, 140, 160);
+/*     background-color: rgb(117, 140, 160); */
+       background: linear-gradient(135deg, #3a8ef8, #a144f7);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    }
 
