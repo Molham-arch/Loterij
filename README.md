@@ -1,4 +1,4 @@
-# 🎉 Loterij Trekking Project
+# 🎉 Loterij Trekking Project (CRUD)
 
 Dit project is een interactieve webapplicatie waarmee gebruikers kunnen deelnemen aan een loterij door een formulier in te vullen. De applicatie bevat een afteltimer tot de deadline, en bij het selecteren van een winnaar worden feestelijke effecten getoond, zoals confetti en geluid.
 
