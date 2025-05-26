@@ -63,14 +63,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Edit User</title>
+    <title>Edit Participants</title>
 </head>
 
 <body>
 
     <div class="container mt-5">
         <a href="participants.php" class="btn btn-secondary mb-4">Back to Main</a>
-        <h1 class="text-center">Edit User</h1>
+        <h1 class="text-center">Edit Participant</h1>
         <?php if ($user): ?>
             <form action="edit_user.php" method="POST" class="mt-4">
                 <input type="hidden" name="id" value="<?php echo htmlspecialchars($id); ?>">
