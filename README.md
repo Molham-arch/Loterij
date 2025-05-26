@@ -53,7 +53,7 @@ Gebouwd met:
 
 ---
 
-## 📁 Mappenstructuur (optioneel voorbeeld)
+## 📁 Mappenstructuur 
 
 ```
 Loterij/
