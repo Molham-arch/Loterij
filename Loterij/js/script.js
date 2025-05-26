@@ -1,4 +1,4 @@
-const countDownDate = new Date("Dec 20, 2024 15:37:25").getTime();
+const countDownDate = new Date("Dec 20, 2025 15:37:25").getTime();
 
 var x = setInterval(function () {
   var counter = document.getElementById("countdown");
