@@ -20,12 +20,16 @@ Gebouwd met:
 
 ## 🛠️ Installatie
 
-1. **Plaats** de volledige projectmap in de root-directory van je lokale server (bijvoorbeeld: `htdocs` voor XAMPP).
-2. **Importeer** het `db.sql` bestand in je database (bijvoorbeeld via phpMyAdmin).
-3. **Pas de databaseverbinding aan** in `inc/conn.php` indien nodig (databasehost, gebruikersnaam, wachtwoord en databasenaam).
-4. **Navigeer** naar:
+1.  **Clone** deze repository met:
+   ```
+   git clone https://github.com/Molham-arch/Loterij.git
+   ```
+2. **Plaats** de volledige projectmap in de root-directory van je lokale server (bijvoorbeeld: `htdocs` voor XAMPP).
+3. **Importeer** het `db.sql` bestand in je database (bijvoorbeeld via phpMyAdmin).
+4. **Pas de databaseverbinding aan** in `inc/conn.php` indien nodig (databasehost, gebruikersnaam, wachtwoord en databasenaam).
+5. **Navigeer** naar:
    `http://localhost/Loterij/index.php`
-5. **Vul het formulier in** om deel te nemen aan de loterij.
+6. **Vul het formulier in** om deel te nemen aan de loterij.
 
 ---
 
