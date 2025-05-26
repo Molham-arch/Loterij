@@ -30,6 +30,8 @@ const myModal = new bootstrap.Modal(document.getElementById("modal"), {
 });
 const celebrationSound = document.getElementById("celebrationSound");
 
+let confettiFrameId = null; // Store animation frame ID
+
 function launchConfetti() {
   confetti({
     particleCount: 100,
@@ -40,7 +42,7 @@ function launchConfetti() {
   const duration = 20000;
   const end = Date.now() + duration;
 
-  (function frame() {
+  function frame() {
     confetti({
       particleCount: 5,
       angle: 60,
@@ -54,9 +56,10 @@ function launchConfetti() {
       origin: { x: 1 },
     });
     if (Date.now() < end) {
-      requestAnimationFrame(frame);
+      confettiFrameId = requestAnimationFrame(frame);
     }
-  })();
+  }
+  confettiFrameId = requestAnimationFrame(frame);
 }
 
 win.addEventListener("click", function () {
@@ -71,6 +74,30 @@ win.addEventListener("click", function () {
     celebrationSound.play();
   }, 4000);
 });
+
+// Function to stop confetti and music, and close modal
+function stopCelebration() {
+  // Stop confetti animation
+  if (confettiFrameId) {
+    cancelAnimationFrame(confettiFrameId);
+    confettiFrameId = null;
+  }
+  // Stop confetti 
+  if (typeof confetti === 'function' && confetti.reset) {
+    confetti.reset();
+  }
+  // Pause and reset the celebration sound
+  celebrationSound.pause();
+  celebrationSound.currentTime = 0;
+  // Hide the modal
+  myModal.hide();
+}
+
+// Attach stopCelebration to modal close button
+const modalCloseBtn = document.querySelector('#modal .btn-close');
+if (modalCloseBtn) {
+  modalCloseBtn.addEventListener('click', stopCelebration);
+}
 
 
 
