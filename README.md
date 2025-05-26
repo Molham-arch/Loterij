@@ -57,16 +57,32 @@ Gebouwd met:
 
 ```
 Loterij/
+├── css/
+│   ├── bootstrap.min.css
+│   └── style.css
+├── images/
+│   ├── jason-leung-Xaanw0s0pMk-unsplash.jpg
+│   └── shamblen-studios-SYfH2bqf1yk-unsplash.jpg
 ├── inc/
 │   ├── conn.php
+│   ├── db_close.php
+│   ├── form_handle.php
 │   └── select.php
-├── index.php
-├── participants.php
+├── js/
+│   ├── bootstrap.bundle.min.js
+│   ├── loader.js
+│   └── script.js
+├── participants/
+│   ├── delete_user.php
+│   ├── edit_user.php
+│   └── participants.php
+├── sounds/
+│   ├── positive-notification-new-level.mp3
+│   ├── victory.mp3
+│   └── videoplayback.m4a
 ├── db.sql
-├── assets/
-│   ├── css/
-│   ├── js/
-│   └── sounds/
+├── index.php
+└── readme.md
 ```
 
 ---
