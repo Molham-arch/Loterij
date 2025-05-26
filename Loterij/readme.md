@@ -1,16 +1,90 @@
-Loterij Trekking Project 🎉
-Dit project is een webapplicatie waarin gebruikers kunnen deelnemen aan een loterij door een formulier in te vullen. De applicatie toont een afteltimer tot de deadline van de loterij, en bij het selecteren van een winnaar wordt een feestelijke animatie met confetti en geluidseffecten geactiveerd. Het project is gebouwd met HTML, CSS, JavaScript en PHP en bootstrap.
+# 🎉 Loterij Trekking Project (CRUD)
 
-installatie:
-1-Plaats de projectmap in de root-directory van je server.
-2-Importeer db.sql.
-3- je kunt de connectie vinden in inc/conn.php .... pas dit aan je databaseconfiguratie als dat nodig is.
-4- navigeer naar http://localhost/Loterij/index.php..
-5-Vul het formulier in met je gegevens om deel te nemen aan de loterij.
+Dit project is een interactieve webapplicatie waarmee gebruikers kunnen deelnemen aan een loterij door een formulier in te vullen. De applicatie bevat een afteltimer tot de deadline, en bij het selecteren van een winnaar worden feestelijke effecten getoond, zoals confetti en geluid.
 
-6-Klik op de Check Draw Winner knop om de winnaar bekend te maken.Dit zal gebeuren met een query uit inc/select.php die 1 random persoon kiest uit database . Dit zal de volgende effecten activeren:
--Een laadanimatie.
--Een pop-upvenster met de naam van de winnaar.
--Een confetti-animatie met een feestelijk geluidseffect.
+Gebouwd met:
 
-7-als je klikt op de knop "see all participants...die ga je redirect naar participants.php waar je kunt all participants zien ... je kunt daar edit/delete/search/sorteren....
+* **HTML, CSS, JavaScript, PHP**
+* **Bootstrap** voor styling
+
+---
+
+## 🚀 Functionaliteiten
+
+* 📄 Deelnemers kunnen zich registreren via een formulier
+* ⏱️ Live afteltimer tot de trekking
+* 🥳 Feestelijke animatie met confetti en geluid bij het selecteren van een winnaar
+* 🧑‍💻 Beheerpagina voor deelnemers: zoeken, sorteren, bewerken en verwijderen
+
+---
+
+## 🛠️ Installatie
+
+1. **Plaats** de volledige projectmap in de root-directory van je lokale server (bijvoorbeeld: `htdocs` voor XAMPP).
+2. **Importeer** het `db.sql` bestand in je database (bijvoorbeeld via phpMyAdmin).
+3. **Pas de databaseverbinding aan** in `inc/conn.php` indien nodig (databasehost, gebruikersnaam, wachtwoord en databasenaam).
+4. **Navigeer** naar:
+   `http://localhost/Loterij/index.php`
+5. **Vul het formulier in** om deel te nemen aan de loterij.
+
+---
+
+## 🏆 Winnaar selecteren
+
+1. Klik op de knop **"Check Draw Winner"**.
+2. De applicatie voert een query uit via `inc/select.php`, waarbij één willekeurige deelnemer wordt geselecteerd.
+3. De volgende acties worden uitgevoerd:
+
+   * ⏳ **Laadanimatie**
+   * 🦮 **Pop-upvenster** met de naam van de winnaar
+   * 🎊 **Confetti-animatie** met feestelijk geluid
+
+---
+
+## 📋 Deelnemers beheren
+
+* Klik op **"See all participants"** om naar `participants.php` te gaan.
+* Daar kun je:
+
+  * 📌 Alle deelnemers bekijken
+  * ✏️ Bewerken
+  * ❌ Verwijderen
+  * 🔍 Zoeken en sorteren
+
+---
+
+## 📁 Mappenstructuur 
+
+```
+Loterij/
+├── css/
+│   ├── bootstrap.min.css
+│   └── style.css
+├── images/
+│   ├── jason-leung-Xaanw0s0pMk-unsplash.jpg
+│   └── shamblen-studios-SYfH2bqf1yk-unsplash.jpg
+├── inc/
+│   ├── conn.php
+│   ├── db_close.php
+│   ├── form_handle.php
+│   └── select.php
+├── js/
+│   ├── bootstrap.bundle.min.js
+│   ├── loader.js
+│   └── script.js
+├── participants/
+│   ├── delete_user.php
+│   ├── edit_user.php
+│   └── participants.php
+├── sounds/
+│   ├── positive-notification-new-level.mp3
+│   ├── victory.mp3
+│   └── videoplayback.m4a
+├── db.sql
+├── index.php
+└── readme.md
+```
+
+---
+
+Veel plezier met de loterij-app! 🎟️
